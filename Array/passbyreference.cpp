@@ -1,4 +1,10 @@
 // this is the example of pass by reference using arrays in c++
+// the git push commands:
+// git status 
+// git add .
+// git commit -m "your message"
+// git push origin main
+
 #include<iostream>
 using namespace std;
 void changeArray(int arr[], int size){
