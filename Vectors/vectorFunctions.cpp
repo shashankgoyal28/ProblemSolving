@@ -8,8 +8,11 @@ int main()
     numbers.push_back(10);
     numbers.push_back(20);
     numbers.push_back(30);
+    numbers.push_back(40);
+    numbers.push_back(50);
 
     cout << "Elements in the vector: "<<numbers.size()<<endl;
+    cout<< " Elements in the vector are:"<< numbers.capacity()<<endl;
     // numbers.pop_back();
     // cout << "Elements in the vector after pop_back: "<<numbers.size()<<endl;
     // numbers.front() = 100;
