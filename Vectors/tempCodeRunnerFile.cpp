@@ -1,0 +1,1 @@
+    cout << "Elements in the vector: "<<numbers.size()<<endl;
