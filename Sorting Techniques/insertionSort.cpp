@@ -2,7 +2,8 @@
 using namespace std;
 void insertionSort(int arr[], int n)
 {
-    for(int i = 1;i < n;i++)
+    for(int i = 1;i < n;i++) // i = 1 beacuse we need to initially consider first element as sorted
+    // and start from the remaining unsorted array
     {
 int curr = arr[i]; 
 int prev = i - 1;
