@@ -40,7 +40,7 @@ vector<string> findPath(vector<vector<int>> &mat)
     vector<vector<bool>> visited(mat.size(),vector<bool>(mat.size(), false));
     vector<string> ans;
     string path = "";
-    
+
     helper(mat, 0, 0, path, ans, visited);
 
     return ans;
