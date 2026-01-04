@@ -40,6 +40,7 @@ void Merge(vector<int>& arr, int start, int mid, int end)
 
 int main(){
     vector<int> arr = {38, 27, 43, 3, 9, 82, 10};
+    
 mergeSort(arr, 0, arr.size() - 1);
 return 0;
 }
