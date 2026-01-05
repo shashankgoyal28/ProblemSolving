@@ -13,7 +13,7 @@ double age;
 
 Teacher (string name,string dept, string subject, double salary){
     //on the right hand we have the parameter function(constructor)properties 
-    // and on the left hand side we have the object properties. 
+    // and on the left hand side we have the object properties.  
 this-> name = name;
 this-> dept = dept;
 this-> subject = subject; 

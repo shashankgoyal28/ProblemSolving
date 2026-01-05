@@ -20,7 +20,7 @@ this-> subject = subject;
 this-> salary = salary;
 }
 // copy construcor
-Teacher(Teacher &Orgobj)
+Teacher(Teacher &Orgobj) // pass by reference 
 {
     cout<<"i am a custom copy constructor"<<endl; 
 this-> name = Orgobj.name;

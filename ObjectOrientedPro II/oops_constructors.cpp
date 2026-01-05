@@ -45,6 +45,6 @@ int main(){
 Teacher t1("shashank","c++","tools",256000,20);//the call to constructor is on the backend here automatically through compiler
 t1.getInfo();
 
-
+ 
 return 0;
 }
