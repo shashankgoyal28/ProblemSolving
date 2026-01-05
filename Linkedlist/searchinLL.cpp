@@ -58,6 +58,18 @@ void InsertInMiddle(int val, int pos){
     temp-> next = newNode;
     }
 }
+int searchInLL(int key){
+    Node* temp = head;
+    int pos = 0;
+    while(temp != NULL){
+        if(temp-> data == key){
+            return pos;
+        }
+        temp = temp-> next;
+        pos++;
+    }
+    return -1; //key not found
+}
         void printList()
         {
             Node* temp = head;
@@ -76,6 +88,7 @@ ll.pushFront(30);
 
 ll.InsertInMiddle(25,2);
 ll.printList();
+cout<< ll.searchInLL(25) <<endl;
 
 return 0;
 }
