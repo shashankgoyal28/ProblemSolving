@@ -1,0 +1,12 @@
+5.Design a class named 'student' having
+
+private data members: - roll number, name and marks
+public member functions: -
+• void getData(); // get student data from user
+• void displayData(); // display data
+Write a main () function demonstrating the concept of File I/O by writing and
+reading 3 objects (of the class student) to and from the file named 'objects.txt'.
+6.What are various access modes used in inheritance? Show the visibility of 
+each in different mode of inheritance in the form of a table.
+7.Explain with diagram, the various phases involved in the complete lifecycle of
+a C++ program from the source file to executable file.
