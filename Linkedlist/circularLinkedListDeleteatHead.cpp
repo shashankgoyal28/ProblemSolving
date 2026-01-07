@@ -41,19 +41,22 @@ class CircularLinkedList{
         }
         while(temp != head);
     }
-
-    void InsertatTail(int val){
-        Node* newNode = new Node(val);
-        if(head == NULL){
-            head = newNode;
-            tail = newNode;
-            tail-> next = head;
-        }
-        else{
-            tail-> next = newNode;
-            tail = newNode;
-            tail-> next = head;
-        }
+void DeleteatHead(){
+    if(head == NULL){
+        return;
+    }
+    else if(head == tail){
+        delete head;
+        head = NULL;
+        tail = NULL;
+    }
+    else{
+        Node* temp = head;
+        head = head-> next;
+        tail -> next = head;
+        temp-> next = NULL;
+        delete temp;
+    }
     }
 };
 int main(){
@@ -61,8 +64,8 @@ CircularLinkedList cll;
 cll.insertatHead(10);
 cll.insertatHead(20);
 cll.insertatHead(30);
-cll.InsertatTail(40);
-cll.InsertatTail(50);
+cll.DeleteatHead();
+
 cll.printList(); // Output: 30 20 10
 
 return 0;
