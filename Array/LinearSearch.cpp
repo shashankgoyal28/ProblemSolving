@@ -2,8 +2,8 @@
 using namespace std;
 int main(){
 
-int arr[] = {4,5,6,7,8};
-int size = 5;
+int arr[] = {4,5,6,7,5,3,2};
+int size = 7;
 
 // int target = 7;
 int target;

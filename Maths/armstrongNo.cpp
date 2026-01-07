@@ -13,7 +13,7 @@ bool isArmstrong(int n){
  return sumOfCubes == copyOfOriginalNumberis;
 }
 int main(){
-int n = 154; 
+int n = 156; 
 
 
 if (isArmstrong(n)){

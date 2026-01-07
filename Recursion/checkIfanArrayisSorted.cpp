@@ -12,7 +12,7 @@ else {
 }
 }
 int main(){
-int arr[] = {1,2,8,4,5};
+int arr[] = {1,2,8,4,7,9};
 int n = sizeof(arr)/sizeof(arr[0]);
 isSorted(arr, n);
 cout<< isSorted(arr, n) << endl;
