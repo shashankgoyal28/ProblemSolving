@@ -7,6 +7,7 @@ using namespace std;
 
 class MinStack {
 public:
+// one integer is for the Value other is for the MinValue.
     // pair<value, minValueTillNow>
     stack<pair<int, int>> s;
 
