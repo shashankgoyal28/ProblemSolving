@@ -31,9 +31,18 @@ Node* buildTree(vector<int> &preorder){
 void LevelOrderTraversal(Node* root){
 queue<Node*> q;
 q.push(root);
+q.push(NULL); // level delimiter
 while(q.size() > 0){
     Node* Curr = q.front();
     q.pop();
+
+    if(Curr == NULL){
+        cout << endl;
+        if(q.size() > 0){
+            q.push(NULL);
+        }
+        continue;
+    }
 
     cout << Curr-> data <<" ";
     if(Curr-> left != NULL){
