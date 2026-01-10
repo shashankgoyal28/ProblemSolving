@@ -38,8 +38,6 @@ return max(leftHeight, rightHeight) + 1; //+1 is used to add the root node.
 int main(){
 vector<int> preOrder = {1,2,-1,-1,3,4,-1,-1,5,-1,-1};
 Node* root = buildTree(preOrder);
-
-cout<< endl;
 cout << "Height of the tree is: " << heightofTree(root) << endl;
 return 0;
 }
