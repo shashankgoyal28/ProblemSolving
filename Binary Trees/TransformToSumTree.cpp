@@ -57,6 +57,5 @@ cout << "Converting to sum tree..." << endl;
 SumofTree(root);
 cout<<"after conversion to sum tree: ";
 preorderTraversal(root);
-cout<< endl;
 return 0;
 }
