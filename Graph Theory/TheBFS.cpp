@@ -24,10 +24,29 @@ l = new list<int> [V]; // edge
     // BFS Traversal
     void BFs(){
         queue<int> q;
-        
-    }
-   
+        vector<bool> visited(V, false);
+        // push the Source Node 
+        q.push(0);
+        visited[0] = true;
 
+        while(q.size() > 0)
+        {
+            int u = q.front(); // u is the Source//..
+            q.pop(); //v is the immediate neighbour or Destination//
+            
+            cout << u << endl;
+
+            for(int v: l[u])
+            {
+                if(!visited[v])
+                {
+                    visited[v] = true;
+                    q.push(v); 
+                }
+            }
+        }
+        cout << endl;
+    }
 };
 int main(){
 
@@ -37,5 +56,6 @@ int main(){
             g.addEdge(1,3);
                 g.addEdge(2,3);
                     g.addEdge(2,4);
+    g.BFs();
 return 0;
 }
