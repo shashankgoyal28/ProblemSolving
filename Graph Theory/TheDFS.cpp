@@ -33,7 +33,14 @@ list<int> *l;
    void dfs(){
     int src = 0;
     vector<bool> visited(V, false);
-    DFShelper(src, visited);
+    for(int i = 0; i < V; i++)
+    {
+        if(!visited[i])
+        {
+            DFShelper(i, visited);
+        }
+    }
+    cout<< endl;
    }
 };
 int main(){
