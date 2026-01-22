@@ -21,8 +21,8 @@ void hello(){
 }
 };
 int main(){
-Child c1; 
-c1.hello();
+Parent p1; 
+p1.getInfo();
 
 return 0;
 }
