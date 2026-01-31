@@ -6,6 +6,7 @@ int knapsack(int wt[], int val[], int w, int n)
     {
         return 0;
     }
+    // source
     // wt[n-1] is the weight of the nth item 
     // w is the capacity of the knapsack
     // knapsack(wt, val, w, n - 1) is the case when we do not include the nth item since w1 <=  w
