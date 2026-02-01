@@ -1,3 +1,4 @@
+// this is the recursive implementation of 0/1 knapsack problem
 #include<iostream>
 using namespace std;
 int knapsack(int wt[], int val[], int w, int n)
