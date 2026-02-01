@@ -9,11 +9,12 @@ int knapsack(int wt[], int val[], int w, int n)
         {
             if(i == 0 || j == 0)
             {
-                // base case 
-                dp[i][j] = 0;
+                // this is not a base case like in recursion it is just initializing the first row and first column with 0
+                dp[i][j] = 0; // i is for items(n) and j is for maximum capacity (weight)
             }
             if(wt[i-1] <= j)
             {
+                //dp[i][j] it is the subproblem
                 dp[i][j] = max(val[i-1] + dp[i-1][j - wt[i-1]], dp[i-1][j]);
             }
             else{
