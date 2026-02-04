@@ -10,7 +10,7 @@ int ConnectRopes(int arr[], int n)
         minHeap.push(arr[i]);
     }
     int cost = 0;
-    while(minHeap.size() > 1)
+    while(minHeap.size() >= 2)
     {
         int first = minHeap.top();
         minHeap.pop();
@@ -22,7 +22,7 @@ int ConnectRopes(int arr[], int n)
     return cost;
 }
 int main(){
-int arr[] = {4, 3, 2, 6};
+int arr[] = {1,2,3,4,5};
 int n = sizeof(arr)/sizeof(arr[0]);
 cout << "Minimum cost to connect ropes is " << ConnectRopes(arr,n);
 return 0;
