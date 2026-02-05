@@ -16,6 +16,14 @@ int LCS(string s1, string s2, int m, int n)
     }
 }
 int main(){
+ string s1, s2;
+    cout << "Enter first string: ";
+    cin >> s1;
 
+    cout << "Enter second string: ";
+    cin >> s2;
+
+    int result = LCS(s1, s2, s1.length(), s2.length());
+    cout << "Length of Longest Common Subsequence: " << result << endl;
 return 0;
 }
