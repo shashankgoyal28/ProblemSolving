@@ -11,6 +11,7 @@ public:
         if (n == 0 || m == 0)
             return 0;
 
+            // this will come to my use after the first time when the value is computed, so we can directly return the value from the dp table instead of recomputing it
         if (dp[n][m] != -1)
             return dp[n][m];
 
