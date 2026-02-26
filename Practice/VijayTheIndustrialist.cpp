@@ -1,4 +1,5 @@
 #include<iostream>
+// this is the recursive implementation of 0/1 knapsack problem - Vijay the Industrialist
 using namespace std;
 
 int knapsack(int Price[], int volume[], int k, int n)
