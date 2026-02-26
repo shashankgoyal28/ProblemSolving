@@ -21,14 +21,10 @@ int knapsack(int Price[], int volume[], int k, int n)
 
 int main()
 {
-    int Price[]  = {10, 10, 40, 50, 90};
-    int volume[] = {10, 20, 20, 50, 150};
-    int k = 105;
-    int n = sizeof(Price) / sizeof(Price[0]);
-        // N-> no. of Category of Fuels 
-        // k -> Maximum amount of money Vijay can spend
-        // Price[] -> Price of each category of fuel
-        // volume[] -> Volume of fuel in each category
+    int Price[]  = {10, 10, 40, 50, 90}; // Price[] -> Price of each category of fuel
+    int volume[] = {10, 20, 20, 50, 150}; // volume[] -> Volume of fuel in each category
+    int k = 105; // k -> Maximum amount of money Vijay can spend
+    int n = sizeof(Price) / sizeof(Price[0]); // N-> no. of Category of Fuels 
 
     cout << knapsack(Price, volume, k, n);
 
