@@ -43,11 +43,11 @@ int kthSmallest(Node* root, int &k)
         }   
     }
 
-    prevOrder++;
-    if(prevOrder == k)
+    if(prevOrder + 1 == k)
     {
         return root->data;
     }
+    prevOrder++;
 
     if(root->right != NULL)
     {
