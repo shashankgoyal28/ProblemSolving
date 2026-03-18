@@ -8,8 +8,9 @@ void Print1toN(int n)
         cout << n << " " << endl;
         return;
     }
-    Print1toN(n - 1);
     cout << n << " " << endl;
+    Print1toN(n - 1);
+    // cout << n << " " << endl;
 }
 
 int main()
