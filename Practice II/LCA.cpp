@@ -37,7 +37,7 @@ Node* LCA(Node* root, int p, int q)
     }
     Node* left = LCA(root-> left, p, q);
     Node* right = LCA(root-> right, p, q);
-    if(left && right)
+    if(left && right) 
     {
         return root;
     }
