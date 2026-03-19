@@ -2,29 +2,29 @@
 #include<stack>
 using namespace std;
 
-void insert(stack<int> &st, int Element)
+void insert(stack<int> &st, int element)
 {
     if(st.empty())
     {
-        st.push(Element);
+        st.push(element);
         return ;
     }
-    int Temp = s.top();
-    s.pop();
-    insert(st,Element);
-    s.push(Temp);
+    int Temp = st.top();
+    st.pop();
+    insert(st,element);
+    st.push(Temp);
     return;
 }
-void ReverseAStack(stack<int> st)
+void ReverseAStack(stack<int> &st)
 {
     if(st.size() == 1)
     {
         return;
     }
-    int Temp = s.top();
-    s.pop();
+    int Temp = st.top();
+    st.pop();
     ReverseAStack(st);
-    insert(st, Element);
+    insert(st, Temp);
     return;
 }
 int main(){
@@ -37,7 +37,7 @@ int main(){
 
     cout<< "the Reverse of a Stack is:"<< endl;
 
-    while(!st.empty)
+    while(!st.empty())
     {
         cout<< st.top()<< endl;
         st.pop();
