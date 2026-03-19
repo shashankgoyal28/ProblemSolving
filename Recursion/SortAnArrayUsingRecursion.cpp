@@ -11,6 +11,7 @@ if(arr.size() == 0 || arr[arr.size() - 1] <= Temp)
 }
 int val = arr[arr.size() - 1];
 arr.pop_back();
+// Induction step
 insert(arr, Temp); 
 arr.push_back(val);
 return;
@@ -22,9 +23,11 @@ if(arr.size() == 1)
 {
     return; 
 }
+// Hypothesis
 int Temp = arr[arr.size() - 1];
 arr.pop_back();
 sort(arr);
+// Induction Step
 insert(arr, Temp);
 }
 
